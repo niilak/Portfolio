@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "make": "^0.8.1",
     "pug": "^3.0.2",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.51.0"
   },
   "name": "portfolio",
   "description": "Portfolio",

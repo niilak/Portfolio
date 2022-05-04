@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.homebg {
+  background-image: url("../../images/homepage-bg.png");
+}
+/*# sourceMappingURL=style.css.map */
