@@ -10,17 +10,22 @@ html(lang="en")
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
     body 
-        .homebg
-            nav 
+        .homebg.py30
+            img.circle-up(src="images/icon/circle_up.png", alt="")
+            img.circle-side(src="images/icon/circle_side.png", alt="")
+            nav.d-flex
                .logo
                     h3 SOME LOGO
-               .navbar
-                    h3 ABOUT ME
-                    h3 MY PORTFOLIO
+               .d-flex
+                    h3.pr35 ABOUT ME
+                    h3.pr35 MY PORTFOLIO
                     h3 CONTACT ME 
-            div 
+            .herosec
                 .icons
-                    include svg_icons/instaicon.pug 
-                    include svg_icons/vibericon.pug 
-                    include svg_icons/gmailicon.pug
-        
+                    img(src="images/icon/insta_icon.png", alt="Instagram")
+                    img(src="images/icon/viber_icon.png", alt="Viber")
+                    img(src="images/icon/gmail_icon.png", alt="Gmail")
+                .introtext 
+                    p Hi! My name is Nila, and I’m web designer stationed in Montenegro. For long time ago, I wish to start working like designer.
+                    p Currently I’m in the phase of learning as much as I can in this profession through my own personal projects and courses. 
+                    p Hope so that i soon stars to work like real freelance UX/UI designer

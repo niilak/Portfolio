@@ -1,9 +1,97 @@
+.circle-side {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.circle-up {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 body {
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #4b4737;
+}
+
 .homebg {
-  background-image: url("../../images/homepage-bg.png");
+  background-image: url("../images/homepage-bg.png");
+}
+
+nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+.herosec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons {
+  display: -ms-grid;
+  display: grid;
+}
+
+.icons img:not(:last-child) {
+  padding-bottom: 110px;
+}
+
+.introtext {
+  display: inline;
+  padding-left: 45px;
+  margin: auto;
+  width: 650px;
+  border-left: #27889d solid 3px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.introtext p::first-letter {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.introtext p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 127.4%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.py30 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.pr35 {
+  padding-right: 35px;
+}
+
+.pb100 {
+  padding-bottom: 110px;
 }
 /*# sourceMappingURL=style.css.map */
