@@ -23,6 +23,16 @@ p {
   color: #4b4737;
 }
 
+p {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .homebg {
   background-image: url("../images/homepage-bg.png");
 }
@@ -38,6 +48,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 190px;
 }
 
 .icons {
@@ -70,6 +81,26 @@ nav {
   font-weight: 400;
   font-size: 24px;
   line-height: 127.4%;
+}
+
+.yellow-rectangle {
+  width: 820px;
+  border-radius: 35px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  background-color: rgba(246, 232, 147, 0.47);
+}
+
+.yellow-rectangle h1 {
+  margin-top: -80px;
+}
+
+.aboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 160px;
 }
 
 .d-flex {
