@@ -113,23 +113,51 @@ nav {
   margin-bottom: 150px;
 }
 
+.aboutme .yellow-rectangle button {
+  margin-top: -24px;
+  margin-left: 45%;
+}
+
 .myportfolio {
   display: block;
   margin-left: 150px;
 }
 
-.myportfolio .img {
+.myportfolio .d-flex .img {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  padding-right: 100px;
 }
 
-.myportfolio .img img {
+.myportfolio .d-flex .img img {
   width: 250px;
   height: 250px;
   margin-right: 110px;
   margin-bottom: 50px;
+}
+
+.myportfolio button {
+  margin-left: 75%;
+  margin-top: -24px;
+}
+
+.contactme {
+  margin-top: 150px;
+}
+
+.contactme h1 {
+  color: #27889d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 0.155em;
+  font-size: 96px;
 }
 
 .big-letter::first-letter {
@@ -145,6 +173,8 @@ nav {
   color: #f2d673;
   font-size: 24px;
   letter-spacing: 0.04em;
+  -webkit-filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
+          filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
 }
 
 .d-flex {
@@ -172,10 +202,5 @@ nav {
 
 .m0 {
   margin: 0;
-}
-
-.btn-margin {
-  margin-top: -24px;
-  margin-left: 53%;
 }
 /*# sourceMappingURL=style.css.map */
