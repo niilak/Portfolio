@@ -113,7 +113,7 @@ nav {
   margin-bottom: 150px;
 }
 
-.aboutme .yellow-rectangle button {
+.aboutme button {
   margin-top: -24px;
   margin-left: 45%;
 }
@@ -158,6 +158,69 @@ nav {
   display: flex;
   letter-spacing: 0.155em;
   font-size: 96px;
+}
+
+.contactform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 350px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.input-style {
+  background: none;
+  border-top: none;
+  border-right: none;
+  padding-left: 8px;
+}
+
+.item1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.item2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.item3 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item3 input {
+  width: calc(100%);
+}
+
+.item4 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item4 input {
+  width: calc(100%);
 }
 
 .big-letter::first-letter {

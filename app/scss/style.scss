@@ -101,11 +101,10 @@ nav {
   display: block;
   margin-left: 160px;
   margin-bottom: 150px;
-  .yellow-rectangle {
-    button {
-      margin-top: -24px;
-      margin-left: 45%;
-    }
+
+  button {
+    margin-top: -24px;
+    margin-left: 45%;
   }
 }
 
@@ -140,6 +139,58 @@ nav {
     display: flex;
     letter-spacing: 0.155em;
     font-size: 96px;
+  }
+}
+
+.contactform {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 5px;
+}
+
+.grid-container > div {
+  // background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px 0;
+}
+
+.input-style {
+  background: none;
+  border-top: none;
+  border-right: none;
+  padding-left: 8px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  input {
+    width: calc(100%);
+  }
+}
+
+.item4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  input {
+    width: calc(100%);
   }
 }
 
