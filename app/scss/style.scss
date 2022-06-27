@@ -162,11 +162,31 @@ nav {
 }
 
 .input-style {
+  // border: $brown solid 1.5px;
+  border: 2px solid $brown;
   background: none;
   border-top: none;
   border-right: none;
   padding-left: 8px;
 }
+
+// .halfborder {
+//   border-left: 1px solid;
+//   border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
+// }
+
+// .halfborder::after {
+//   padding: 0;
+//   margin: 0;
+//   display: block; /* probably not really needed? */
+//   content: "";
+//   width: 50%;
+//   height: 1.1px; /* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
+//   background-color: white;
+//   position: absolute;
+//   right: 0;
+//   top: -1px;
+// }
 
 .item1 {
   grid-column-start: 1;

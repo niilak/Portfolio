@@ -185,6 +185,7 @@ nav {
 }
 
 .input-style {
+  border: 2px solid #4b4737;
   background: none;
   border-top: none;
   border-right: none;
