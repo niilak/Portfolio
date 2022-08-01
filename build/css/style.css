@@ -43,6 +43,11 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -57,6 +62,20 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 200px;
+}
+
+.navmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navmenu h3:not(:last-child) {
+  padding-right: 90px;
+}
+
+.navmenu h3 {
+  margin: 0;
 }
 
 .herosec {
@@ -96,26 +115,17 @@ nav {
 .yellow-rectangle {
   width: 820px;
   border-radius: 35px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 40px;
+  padding: 60px 90px;
   background-color: rgba(246, 232, 147, 0.47);
 }
 
-.yellow-rectangle h1 {
-  margin-top: -45px;
-  margin-left: -30px;
-}
-
 .aboutme {
-  display: block;
-  margin-left: 160px;
+  position: relative;
   margin-bottom: 150px;
 }
 
-.aboutme button {
-  margin-top: -24px;
-  margin-left: 45%;
+.aboutme h1 {
+  margin: 0;
 }
 
 .myportfolio {
@@ -136,13 +146,10 @@ nav {
   margin-bottom: 50px;
 }
 
-.myportfolio button {
-  margin-left: 75%;
-  margin-top: -24px;
-}
-
 .contactme {
-  margin-top: 150px;
+  margin-top: 160px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1.74%, #c4c4c4), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(360deg, #c4c4c4 -1.74%, rgba(196, 196, 196, 0) 100%);
 }
 
 .contactme h1 {
@@ -158,6 +165,41 @@ nav {
   display: flex;
   letter-spacing: 0.155em;
   font-size: 96px;
+  text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.28);
+}
+
+.contactme h2 {
+  margin-bottom: 90px;
+  color: #ad5b5b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.055em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contactme span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.155em;
+  color: rgba(0, 0, 0, 0.25);
+  padding-bottom: 15px;
 }
 
 .contactform {
@@ -167,10 +209,10 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 350px;
 }
 
 .grid-container {
+  max-width: 350px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
@@ -179,17 +221,104 @@ nav {
   padding: 5px;
 }
 
-.grid-container > div {
-  text-align: center;
-  padding: 5px 0;
+.grid-container .leftborder {
+  position: relative;
+}
+
+.grid-container .leftborder::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: block;
+  background: black;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-130%);
+          transform: translateY(-130%);
 }
 
 .input-style {
-  border: 2px solid #4b4737;
+  position: relative;
+  border-bottom: 0.5px solid #4b4737;
   background: none;
   border-top: none;
   border-right: none;
+  border-left: none;
   padding-left: 8px;
+  margin-bottom: 25px;
+}
+
+input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 82.69%;
+  /* or 12px */
+  letter-spacing: 0.08em;
+  color: #4b4737;
+}
+
+input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 82.69%;
+  /* or 12px */
+  letter-spacing: 0.08em;
+  color: #4b4737;
+}
+
+input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 82.69%;
+  /* or 12px */
+  letter-spacing: 0.08em;
+  color: #4b4737;
+}
+
+input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 82.69%;
+  /* or 12px */
+  letter-spacing: 0.08em;
+  color: #4b4737;
+}
+
+.footericon {
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footericon img:not(:last-child) {
+  padding-right: 80px;
+}
+
+.halfborder::before {
+  padding: 0;
+  margin: 0;
+  display: block;
+  /* probably not really needed? */
+  content: "";
+  width: 50%;
+  height: 1.1px;
+  /* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -1px;
 }
 
 .item1 {
@@ -266,5 +395,10 @@ nav {
 
 .m0 {
   margin: 0;
+}
+
+.container150 {
+  margin-right: 150px;
+  margin-left: 150px;
 }
 /*# sourceMappingURL=style.css.map */
