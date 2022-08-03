@@ -33,6 +33,7 @@ p {
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.04em;
+  line-height: 127.4%;
 }
 
 h1 {
@@ -102,8 +103,12 @@ nav {
 .yellow-rectangle {
   width: 820px;
   border-radius: 35px;
-  padding: 60px 90px;
+  padding: 90px 60px 80px 60px;
   background-color: $light-yellow;
+
+  // p:first-line {
+  //   margin-left: 15px;
+  // }
 }
 
 .aboutme {
@@ -111,6 +116,14 @@ nav {
   margin-bottom: 150px;
   h1 {
     margin: 0;
+    position: absolute;
+    left: 2rem;
+    bottom: 23rem;
+  }
+  .blue-btn {
+    position: absolute;
+    right: 32rem;
+    bottom: -1rem;
   }
 }
 
