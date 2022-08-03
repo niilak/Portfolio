@@ -1,17 +1,7 @@
 @import "./palette.scss";
 
-.circle-side {
-  position: sticky;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.circle-up {
-  position: sticky;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 1px;
+* {
+  outline: none;
 }
 
 body {
@@ -26,7 +16,7 @@ h4,
 h5,
 h6,
 p {
-  color: $brown;
+  color: $gray;
 }
 
 p {
@@ -49,6 +39,20 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
+
+.circle-side {
+  position: sticky;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circle-up {
+  position: sticky;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1px;
 }
 
 .homebg {
@@ -105,10 +109,6 @@ nav {
   border-radius: 35px;
   padding: 90px 60px 80px 60px;
   background-color: $light-yellow;
-
-  // p:first-line {
-  //   margin-left: 15px;
-  // }
 }
 
 .aboutme {
@@ -118,7 +118,7 @@ nav {
     margin: 0;
     position: absolute;
     left: 2rem;
-    bottom: 23rem;
+    bottom: 20rem;
   }
   .blue-btn {
     position: absolute;
@@ -128,28 +128,44 @@ nav {
 }
 
 .myportfolio {
+  position: relative;
   display: block;
-  margin-left: 150px;
   .d-flex {
     .img {
       width: min-content;
       img {
-        width: 250px;
-        height: 250px;
-        margin-right: 110px;
-        margin-bottom: 50px;
+        margin-right: 30px;
+        margin-top: 120px;
       }
+    }
+  }
+  .yellow-rectangle {
+    height: fit-content;
+    h1 {
+      position: absolute;
+      top: -7rem;
+    }
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.095em;
+      margin-top: 60px;
+    }
+    button {
+      position: absolute;
+      bottom: -1.5rem;
+      right: 17rem;
     }
   }
 }
 
 .contactme {
   margin-top: 160px;
-  background: linear-gradient(
-    360deg,
-    #c4c4c4 -1.74%,
-    rgba(196, 196, 196, 0) 100%
-  );
+  // background: linear-gradient(
+  //   360deg,
+  //   #c4c4c4 -1.74%,
+  //   s rgba(196, 196, 196, 0) 100%
+  // );
+  background: linear-gradient(360deg, #c4c4c4, transparent);
 
   h1 {
     color: $blue;
@@ -162,16 +178,21 @@ nav {
   }
 
   h2 {
+    width: fit-content;
     margin-bottom: 90px;
     color: $bordo;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.055em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   span {
@@ -206,7 +227,7 @@ nav {
       width: 1px;
       height: 10px;
       display: block;
-      background: black;
+      background: $gray;
       position: absolute;
       left: 0px;
       top: 50%;
@@ -217,7 +238,7 @@ nav {
 
 .input-style {
   position: relative;
-  border-bottom: 0.5px solid $brown;
+  border-bottom: 0.5px solid $gray;
   background: none;
   border-top: none;
   border-right: none;
@@ -232,7 +253,7 @@ input::placeholder {
   font-size: 14px;
   line-height: 82.69%; /* or 12px */
   letter-spacing: 0.08em;
-  color: #4b4737;
+  color: $gray;
 }
 
 .footericon {
@@ -244,24 +265,6 @@ input::placeholder {
   img:not(:last-child) {
     padding-right: 80px;
   }
-}
-
-// .halfborder {
-//   border-left: 1px solid;
-//   // border-image: linear-gradient(to left, #000 50%, transparent 50%) 100% 1;
-// }
-
-.halfborder::before {
-  padding: 0;
-  margin: 0;
-  display: block; /* probably not really needed? */
-  content: "";
-  width: 50%;
-  height: 1.1px; /* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
-  background-color: white;
-  position: absolute;
-  right: 0;
-  top: -1px;
 }
 
 .item1 {
@@ -305,8 +308,11 @@ input::placeholder {
   color: $yellow;
   font-size: 24px;
   letter-spacing: 0.04em;
-  // filter: drop-shadow(4px 6px 10px rgba);
   filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
+  transition: all 0.5s ease-out;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .d-flex {
@@ -337,4 +343,9 @@ input::placeholder {
 .container150 {
   margin-right: 150px;
   margin-left: 150px;
+}
+
+.container100 {
+  margin-left: 100px;
+  margin-right: 100px;
 }

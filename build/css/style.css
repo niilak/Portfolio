@@ -1,19 +1,5 @@
-.circle-side {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 100%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.circle-up {
-  position: -webkit-sticky;
-  position: sticky;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 1px;
+* {
+  outline: none;
 }
 
 body {
@@ -51,6 +37,24 @@ h2 {
 
 h3 {
   font-size: 24px;
+}
+
+.circle-side {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.circle-up {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 1px;
 }
 
 .homebg {
@@ -129,7 +133,7 @@ nav {
   margin: 0;
   position: absolute;
   left: 2rem;
-  bottom: 23rem;
+  bottom: 20rem;
 }
 
 .aboutme .blue-btn {
@@ -139,8 +143,8 @@ nav {
 }
 
 .myportfolio {
+  position: relative;
   display: block;
-  margin-left: 150px;
 }
 
 .myportfolio .d-flex .img {
@@ -150,16 +154,37 @@ nav {
 }
 
 .myportfolio .d-flex .img img {
-  width: 250px;
-  height: 250px;
-  margin-right: 110px;
-  margin-bottom: 50px;
+  margin-right: 30px;
+  margin-top: 120px;
+}
+
+.myportfolio .yellow-rectangle {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.myportfolio .yellow-rectangle h1 {
+  position: absolute;
+  top: -7rem;
+}
+
+.myportfolio .yellow-rectangle h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.095em;
+  margin-top: 60px;
+}
+
+.myportfolio .yellow-rectangle button {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 17rem;
 }
 
 .contactme {
   margin-top: 160px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-1.74%, #c4c4c4), to(rgba(196, 196, 196, 0)));
-  background: linear-gradient(360deg, #c4c4c4 -1.74%, rgba(196, 196, 196, 0) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c4c4c4), to(transparent));
+  background: linear-gradient(360deg, #c4c4c4, transparent);
 }
 
 .contactme h1 {
@@ -179,22 +204,26 @@ nav {
 }
 
 .contactme h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 90px;
   color: #ad5b5b;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.055em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.contactme h2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contactme span {
@@ -240,7 +269,7 @@ nav {
   width: 1px;
   height: 10px;
   display: block;
-  background: black;
+  background: #4b4737;
   position: absolute;
   left: 0px;
   top: 50%;
@@ -316,21 +345,6 @@ input::placeholder {
   padding-right: 80px;
 }
 
-.halfborder::before {
-  padding: 0;
-  margin: 0;
-  display: block;
-  /* probably not really needed? */
-  content: "";
-  width: 50%;
-  height: 1.1px;
-  /* slight higher to work around rounding errors(?) on some zoom levels in some browsers. */
-  background-color: white;
-  position: absolute;
-  right: 0;
-  top: -1px;
-}
-
 .item1 {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -378,6 +392,13 @@ input::placeholder {
   letter-spacing: 0.04em;
   -webkit-filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
           filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.blue-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .d-flex {
@@ -410,5 +431,10 @@ input::placeholder {
 .container150 {
   margin-right: 150px;
   margin-left: 150px;
+}
+
+.container100 {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 /*# sourceMappingURL=style.css.map */
