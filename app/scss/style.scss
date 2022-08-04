@@ -128,7 +128,7 @@ nav {
 }
 
 .aboutme {
-  margin-bottom: 150px;
+  margin-bottom: 220px;
 
   h1 {
     margin: 0;
@@ -155,8 +155,9 @@ nav {
     height: fit-content;
 
     h1 {
+      margin: 0;
       position: absolute;
-      top: -7rem;
+      top: -4.5rem;
     }
 
     h2 {
@@ -164,12 +165,6 @@ nav {
       letter-spacing: 0.095em;
       margin-top: 60px;
     }
-
-    // button {
-    //   position: absolute;
-    //   bottom: -1.5rem;
-    //   right: 12rem;
-    // }
   }
 }
 

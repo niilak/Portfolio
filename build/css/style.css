@@ -140,7 +140,7 @@ nav {
 }
 
 .aboutme {
-  margin-bottom: 150px;
+  margin-bottom: 220px;
 }
 
 .aboutme h1 {
@@ -172,8 +172,9 @@ nav {
 }
 
 .myportfolio .yellow-rectangle h1 {
+  margin: 0;
   position: absolute;
-  top: -7rem;
+  top: -4.5rem;
 }
 
 .myportfolio .yellow-rectangle h2 {
