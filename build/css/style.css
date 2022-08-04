@@ -57,6 +57,10 @@ h3 {
   top: 1px;
 }
 
+.stonesmob {
+  display: none;
+}
+
 .homebg {
   background-image: url("../images/homepage_bg.jpg");
   background-repeat: initial;
@@ -75,12 +79,13 @@ nav {
   display: flex;
 }
 
-.navmenu h3:not(:last-child) {
-  padding-right: 90px;
-}
-
 .navmenu h3 {
   margin: 0;
+  cursor: pointer;
+}
+
+.navmenu h3:not(:last-child) {
+  margin-right: 90px;
 }
 
 .herosec {
@@ -95,8 +100,17 @@ nav {
   display: grid;
 }
 
+.icons img {
+  cursor: pointer;
+}
+
+.icons img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .icons img:not(:last-child) {
-  padding-bottom: 110px;
+  margin-bottom: 110px;
 }
 
 .introtext {
@@ -118,6 +132,7 @@ nav {
 }
 
 .yellow-rectangle {
+  position: relative;
   width: 820px;
   border-radius: 35px;
   padding: 90px 60px 80px 60px;
@@ -125,7 +140,6 @@ nav {
 }
 
 .aboutme {
-  position: relative;
   margin-bottom: 150px;
 }
 
@@ -136,14 +150,7 @@ nav {
   bottom: 20rem;
 }
 
-.aboutme .blue-btn {
-  position: absolute;
-  right: 32rem;
-  bottom: -1rem;
-}
-
 .myportfolio {
-  position: relative;
   display: block;
 }
 
@@ -155,7 +162,7 @@ nav {
 
 .myportfolio .d-flex .img img {
   margin-right: 30px;
-  margin-top: 120px;
+  margin-top: 160px;
 }
 
 .myportfolio .yellow-rectangle {
@@ -173,12 +180,6 @@ nav {
   text-transform: uppercase;
   letter-spacing: 0.095em;
   margin-top: 60px;
-}
-
-.myportfolio .yellow-rectangle button {
-  position: absolute;
-  bottom: -1.5rem;
-  right: 17rem;
 }
 
 .contactme {
@@ -341,8 +342,17 @@ input::placeholder {
           justify-content: center;
 }
 
+.footericon img {
+  cursor: pointer;
+}
+
+.footericon img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .footericon img:not(:last-child) {
-  padding-right: 80px;
+  margin-right: 80px;
 }
 
 .item1 {
@@ -383,6 +393,9 @@ input::placeholder {
 }
 
 .blue-btn {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 12rem;
   padding: 17px 40px;
   border-radius: 15px;
   background-color: #27889d;
@@ -394,6 +407,7 @@ input::placeholder {
           filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .blue-btn:hover {

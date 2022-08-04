@@ -55,6 +55,10 @@ h3 {
   top: 1px;
 }
 
+.stonesmob {
+  display: none;
+}
+
 .homebg {
   background-image: url("../images/homepage_bg.jpg");
   background-repeat: initial;
@@ -67,12 +71,14 @@ nav {
 
 .navmenu {
   display: flex;
-  h3:not(:last-child) {
-    padding-right: 90px;
-  }
 
   h3 {
     margin: 0;
+    cursor: pointer;
+  }
+
+  h3:not(:last-child) {
+    margin-right: 90px;
   }
 }
 
@@ -83,8 +89,17 @@ nav {
 
 .icons {
   display: grid;
+
+  img {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   img:not(:last-child) {
-    padding-bottom: 110px;
+    margin-bottom: 110px;
   }
 }
 
@@ -105,6 +120,7 @@ nav {
 }
 
 .yellow-rectangle {
+  position: relative;
   width: 820px;
   border-radius: 35px;
   padding: 90px 60px 80px 60px;
@@ -112,59 +128,53 @@ nav {
 }
 
 .aboutme {
-  position: relative;
   margin-bottom: 150px;
+
   h1 {
     margin: 0;
     position: absolute;
     left: 2rem;
     bottom: 20rem;
   }
-  .blue-btn {
-    position: absolute;
-    right: 32rem;
-    bottom: -1rem;
-  }
 }
 
 .myportfolio {
-  position: relative;
   display: block;
+
   .d-flex {
     .img {
       width: min-content;
+
       img {
         margin-right: 30px;
-        margin-top: 120px;
+        margin-top: 160px;
       }
     }
   }
   .yellow-rectangle {
     height: fit-content;
+
     h1 {
       position: absolute;
       top: -7rem;
     }
+
     h2 {
       text-transform: uppercase;
       letter-spacing: 0.095em;
       margin-top: 60px;
     }
-    button {
-      position: absolute;
-      bottom: -1.5rem;
-      right: 17rem;
-    }
+
+    // button {
+    //   position: absolute;
+    //   bottom: -1.5rem;
+    //   right: 12rem;
+    // }
   }
 }
 
 .contactme {
   margin-top: 160px;
-  // background: linear-gradient(
-  //   360deg,
-  //   #c4c4c4 -1.74%,
-  //   s rgba(196, 196, 196, 0) 100%
-  // );
   background: linear-gradient(360deg, #c4c4c4, transparent);
 
   h1 {
@@ -262,8 +272,16 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 
+  img {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   img:not(:last-child) {
-    padding-right: 80px;
+    margin-right: 80px;
   }
 }
 
@@ -288,6 +306,7 @@ input::placeholder {
 .item4 {
   grid-column-start: 1;
   grid-column-end: 3;
+
   input {
     width: calc(100%);
   }
@@ -301,6 +320,9 @@ input::placeholder {
 }
 
 .blue-btn {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 12rem;
   padding: 17px 40px;
   border-radius: 15px;
   background-color: $blue;
@@ -310,6 +332,8 @@ input::placeholder {
   letter-spacing: 0.04em;
   filter: drop-shadow(4px 6px 10px rgba(0, 0, 0, 0.29));
   transition: all 0.5s ease-out;
+  cursor: pointer;
+
   &:hover {
     transform: scale(1.1);
   }
