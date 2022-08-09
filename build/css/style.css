@@ -13,7 +13,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+span {
   color: #4b4737;
 }
 
@@ -102,11 +103,6 @@ nav {
 
 .icons img {
   cursor: pointer;
-}
-
-.icons img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .icons img:not(:last-child) {
@@ -347,11 +343,6 @@ input::placeholder {
   cursor: pointer;
 }
 
-.footericon img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .footericon img:not(:last-child) {
   margin-right: 80px;
 }
@@ -416,6 +407,15 @@ input::placeholder {
           transform: scale(1.1);
 }
 
+.scale1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.font96 {
+  font-size: 96px;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,5 +451,17 @@ input::placeholder {
 .container100 {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+.portfoliobg {
+  background-image: url("../images/portfolio_bg.jpg");
+  background-repeat: initial;
+}
+
+.herotext span {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 112px;
+  letter-spacing: 0.13em;
 }
 /*# sourceMappingURL=style.css.map */

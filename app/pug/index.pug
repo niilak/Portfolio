@@ -1,31 +1,17 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Niila
-        link(rel="stylesheet", href="../build/css/style.css")
-        style.
-            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+    include includes/head.pug
 
     body.homebg
         img.circle-up(src="images/icon/circle_up.png", alt="")
         img.circle-side(src="images/icon/circle_side.png", alt="")
         div
             include includes/nav.pug 
-            //- nav.d-flex.py30
-            //-    .logo
-            //-         h3.m0 SOME LOGO
-            //-    .navmenu
-            //-         h3 ABOUT <br> ME
-            //-         h3 MY <br> PORTFOLIO
-            //-         h3 CONTACT<br> ME 
             .herosec.py30
                 .icons
-                    img(src="images/icon/insta_icon.png", alt="Instagram")
-                    img(src="images/icon/viber_icon.png", alt="Viber")
-                    img(src="images/icon/gmail_icon.png", alt="Gmail")
+                    img.scale1(src="images/icon/insta_icon.png", alt="Instagram")
+                    img.scale1(src="images/icon/viber_icon.png", alt="Viber")
+                    img.scale1(src="images/icon/gmail_icon.png", alt="Gmail")
                 .introtext 
                     p.big-letter Hi! My name is Nila, and I’m web designer stationed in Montenegro. For long time ago, I wish to start working like designer.
                     p.big-letter Currently I’m in the phase of learning as much as I can in this profession through my own personal projects and courses. 
@@ -46,23 +32,5 @@ html(lang="en")
                         p.big-letter  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley  has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.ding versions of Lorem Ipsum
                         button.blue-btn(type='button') see more
             include includes/contactme.pug
-            //- .contactme 
-            //-     h1 contact me
-            //-     form.contactform
-            //-         .grid-container
-            //-             .item1.leftborder
-            //-                 input.input-style(type="text" id="name" name="name"  placeholder="*Name")
-            //-             .item2.leftborder
-            //-                 input.input-style(type="text" id="number" name="number" placeholder="Number")
-            //-             .item3.leftborder
-            //-                 input.input-style(type="text" id="email" name="email" placeholder="*E-mail")
-            //-             .item4.leftborder
-            //-                 input.input-style(type="text" id="message" name="message" placeholder="*Message")
-            //-     h2 Send e-mail
-            //-     .footericon
-            //-         img(src="images/icon/viber_iconred.png", alt="ViberAccount")
-            //-         img(src="images/icon/insta_iconred.png", alt="InstagramAccount")
-            //-         img(src="images/icon/git_iconred.png", alt="GitAccount")
-            //-     span ©2021 NilaDesign
 
 

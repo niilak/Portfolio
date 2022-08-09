@@ -15,7 +15,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+span {
   color: $gray;
 }
 
@@ -92,10 +93,6 @@ nav {
 
   img {
     cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   img:not(:last-child) {
@@ -269,10 +266,6 @@ input::placeholder {
 
   img {
     cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   img:not(:last-child) {
@@ -334,6 +327,16 @@ input::placeholder {
   }
 }
 
+.scale1 {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.font96 {
+  font-size: 96px;
+}
+
 .d-flex {
   display: flex;
 }
@@ -367,4 +370,20 @@ input::placeholder {
 .container100 {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+// MY PORTFOLIO SCSS
+
+.portfoliobg {
+  background-image: url("../images/portfolio_bg.jpg");
+  background-repeat: initial;
+}
+
+.herotext {
+  span {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 112px;
+    letter-spacing: 0.13em;
+  }
 }
