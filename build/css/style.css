@@ -70,6 +70,23 @@ a {
   display: none;
 }
 
+.myportfoliomobile {
+  display: none;
+}
+
+.open-menu {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 85%;
+  top: 0;
+  left: 0;
+  background-color: #f2d673;
+  padding-top: 100px;
+  padding-left: 25px;
+  z-index: 2;
+}
+
 .homebg {
   background-image: url("../images/homepage_bg.jpg");
   background-repeat: initial;
@@ -79,7 +96,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navmenu {
@@ -106,6 +125,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 190px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .icons {
@@ -160,12 +181,6 @@ nav {
 
 .myportfolio {
   display: block;
-}
-
-.myportfolio .d-flex .img {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
 }
 
 .myportfolio .d-flex .img img {
@@ -262,19 +277,53 @@ nav {
 
 .grid-container {
   max-width: 350px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  gap: 10px;
+  display: block;
   padding: 5px;
 }
 
-.grid-container .leftborder {
+.grid-container .firstrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.grid-container .firstrow .item1 {
+  margin-right: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 7px);
+}
+
+.grid-container .firstrow .item2 {
+  margin-left: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 7px);
+}
+
+.grid-container .item3,
+.grid-container .item4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-container .item3 input,
+.grid-container .item4 input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.leftborder {
   position: relative;
 }
 
-.grid-container .leftborder::before {
+.leftborder::before {
   content: "";
   width: 1px;
   height: 10px;
@@ -289,6 +338,10 @@ nav {
 
 .input-style {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   border-bottom: 0.5px solid #4b4737;
   background: none;
   border-top: none;
@@ -351,44 +404,12 @@ input::placeholder {
           justify-content: center;
 }
 
-.footericon img {
+.footericon a {
   cursor: pointer;
 }
 
-.footericon img:not(:last-child) {
+.footericon a:not(:last-child) {
   margin-right: 80px;
-}
-
-.item1 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.item2 {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.item3 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.item3 input {
-  width: calc(98%);
-}
-
-.item4 {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.item4 input {
-  width: calc(98%);
 }
 
 .big-letter::first-letter {
@@ -424,10 +445,6 @@ input::placeholder {
           transform: scale(1.1);
 }
 
-.font96 {
-  font-size: 96px;
-}
-
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,11 +453,6 @@ input::placeholder {
 
 .pt40 {
   padding-top: 40px;
-}
-
-.py30 {
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .pr35 {
@@ -485,32 +497,28 @@ input::placeholder {
   letter-spacing: 0.13em;
 }
 
-.no1 {
+.portfolio {
+  overflow-x: scroll;
+}
+
+.portfolio .no1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 
-.no1 .img1 {
-  position: absolute;
-  top: 10rem;
+.portfolio .no1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 50px;
 }
 
-.no1 .img2 {
-  position: absolute;
-  top: 15rem;
-  left: 27rem;
+.portfolio .textzone {
+  width: 500px;
 }
 
-.textzone h1 {
-  width: 50%;
-  margin-left: auto;
-}
-
-.textzone p {
-  width: 50%;
-  margin-left: auto;
+.portfolio .textzone p {
+  width: 450px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -534,6 +542,12 @@ input::placeholder {
     margin-left: 65px;
     margin-right: 65px;
   }
+  .herotext {
+    margin-left: 150px;
+  }
+  .herotext span {
+    font-size: 84px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -544,11 +558,56 @@ input::placeholder {
     margin-right: 100px;
     margin-left: 100px;
   }
-  .stonesiped {
-    display: none;
+  .container100 {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .myportfoliomobile {
+    position: relative;
+    display: block;
+  }
+  .myportfoliomobile .yellow-rectangle h1 {
+    position: absolute;
+    top: -7rem;
+  }
+  .myportfoliomobile .yellow-rectangle h2 {
+    text-transform: uppercase;
+    margin-top: 50px;
+  }
+  .myportfoliomobile .yellow-rectangle .img {
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    max-width: 70%;
+  }
+  .myportfoliomobile .yellow-rectangle .img .stonesiped,
+  .myportfoliomobile .yellow-rectangle .img .stonesmob {
+    width: 75%;
+  }
+  .myportfoliomobile .yellow-rectangle .img .stonesmob {
+    width: 25%;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .myportfoliomobile .yellow-rectangle .blue-btn {
+    left: 6rem;
+    right: unset;
   }
   .stonesmob {
     display: block;
+  }
+  .myportfolio {
+    display: none;
+  }
+  .contactme h1 {
+    font-size: 84px;
+  }
+  .no1 img {
+    width: 50%;
   }
 }
 
@@ -585,32 +644,50 @@ input::placeholder {
     margin-left: 15px;
     margin-right: 15px;
   }
-  .myportfolio .d-flex .yellow-rectangle {
-    padding: 70px 30px;
+  .contactme h1 {
+    font-size: 70px;
   }
-  .myportfolio .d-flex .yellow-rectangle h2 {
-    margin-top: 15px;
+  .herotext {
+    margin-right: auto;
+    margin-left: auto;
   }
-  .myportfolio .d-flex .yellow-rectangle .blue-btn {
-    right: 6rem;
-  }
-  .myportfolio .d-flex .img img {
-    margin-right: 17px;
-    margin-top: 100px;
+  .herotext span {
+    font-size: 72px;
+    line-height: 98px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .container150 {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
   .yellow-rectangle {
     padding: 60px 20px;
   }
+  .herosec {
+    margin-right: unset;
+    margin-left: unset;
+  }
+  .herosec .introtext {
+    padding-left: 25px;
+  }
+  .myportfoliomobile .yellow-rectangle h2 {
+    margin-top: 25px;
+  }
+  .myportfoliomobile .yellow-rectangle .img {
+    max-width: 85%;
+  }
   .blue-btn {
     font-size: 17px;
     padding: 13px 20px;
+  }
+  .contactme h1 {
+    font-size: 54px;
+  }
+  .herotext span {
+    font-size: 54px;
+    line-height: 70px;
   }
 }
 
@@ -618,6 +695,9 @@ input::placeholder {
   .container150 {
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .grid-container {
+    max-width: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */
