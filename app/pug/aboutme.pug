@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body.aboutmebg
+        img.circle-up(src="images/icon/circle_up.png", alt="")
+        img.circle-side(src="images/icon/circle_side.png", alt="")
+        div
+            nav.d-flex.container40
+                .logo
+                    h3.m0 SOME LOGO
+                .navmenu
+                    a(href="myportfolio.html") 
+                        h3.scale1 ABOUT <br> ME
+                    a(href="myportfolio.html")
+                        h3.scale1 MY <br> PORTFOLIO
+                    a(href="myportfolio.html")
+                        h3.scale1 CONTACT<br> ME 
+                .navmob.scale1
+                        a(href="#openmenu")
+                                img(src="images/icon/burger_menu.png", alt="")
+                .open-menu#openmenu
+                    a(href="myportfolio.html") 
+                            h3.scale1 ABOUT <br> ME
+                    a(href="myportfolio.html")
+                            h3.scale1 MY <br> PORTFOLIO
+                    a(href="myportfolio.html")
+                            h3.scale1 CONTACT<br> ME 
+            .aboutmesec.container40
+                include includes/sideicons.pug
+                span.bigletters ABOUT <br> ME
+            .aboutmetext 
+                p.big-letter Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                p.big_letter Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            include includes/contactme.pug
+                

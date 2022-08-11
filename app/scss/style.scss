@@ -94,6 +94,11 @@ a {
   background-repeat: initial;
 }
 
+.aboutmebg {
+  background-image: url("../images/aboutme_bg.jpg");
+  background-repeat: initial;
+}
+
 nav {
   justify-content: space-between;
   margin-bottom: 200px;
@@ -128,11 +133,11 @@ nav {
 .icons {
   display: grid;
 
-  img {
+  a {
     cursor: pointer;
   }
 
-  img:not(:last-child) {
+  a:not(:last-child) {
     margin-bottom: 110px;
   }
 }
@@ -389,14 +394,35 @@ input::placeholder {
   background-repeat: initial;
 }
 
+.bigletters {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 112px;
+  letter-spacing: 0.13em;
+}
+
+.herosec {
+  span {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 14%;
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 96px;
+    // line-height: 112px;
+    // letter-spacing: 0.13em;
+  }
+}
+
 .herotext {
   margin-left: 260px;
-  span {
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 112px;
-    letter-spacing: 0.13em;
-  }
+  // span {
+  //   font-weight: 700;
+  //   font-size: 96px;
+  //   line-height: 112px;
+  //   letter-spacing: 0.13em;
+  // }
 }
 
 .portfolio {
@@ -418,6 +444,23 @@ input::placeholder {
       margin: 0;
     }
   }
+}
+
+// ABOUT ME
+
+.aboutmesec {
+  display: flex;
+  span {
+    margin-left: 14%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.aboutmetext {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // MEDIA HOME PAGE
@@ -453,10 +496,20 @@ input::placeholder {
   .herotext {
     margin-left: 150px;
 
-    span {
-      font-size: 84px;
-    }
+    // span {
+    //   font-size: 84px;
+    // }
   }
+
+  .bigletters {
+    font-size: 82px;
+  }
+
+  // .herosec {
+  //   // span {
+  //   //   font-size: 84px;
+  //   // }
+  // }
 }
 
 @media screen and (max-width: 1024px) {
@@ -598,24 +651,24 @@ input::placeholder {
   .herotext {
     margin-right: auto;
     margin-left: auto;
+    // span {
+    // font-size: 72px;
+    // line-height: 98px;
+    // }
+  }
+
+  .herosec {
     span {
-      font-size: 72px;
-      line-height: 98px;
+      margin-left: auto;
+      margin-right: auto;
+      // font-size: 80px;
     }
   }
 
-  // .portfolio {
-  //   .no1 {
-  //     .textzone {
-  //       h1 {
-  //         font-size: 56px;
-  //       }
-  //       p {
-  //         font-size: 18px;
-  //       }
-  //     }
-  //   }
-  // }
+  .bigletters {
+    font-size: 72px;
+    line-height: 98px;
+  }
 
   .portfolio {
     display: none;
@@ -629,9 +682,10 @@ input::placeholder {
         width: 82%;
       }
     }
-    // .textzone {
-    //   padding-left: 60px;
-    // }
+  }
+
+  .aboutmetext {
+    width: 80%;
   }
 }
 
@@ -680,11 +734,22 @@ input::placeholder {
     }
   }
 
-  .herotext {
+  // .herotext {
+  //   span {
+  //     font-size: 54px;
+  //     line-height: 70px;
+  //   }
+  // }
+
+  .herosec {
     span {
-      font-size: 54px;
-      line-height: 70px;
+      margin-left: 9%;
+      // font-size: 54px;
     }
+  }
+
+  .bigletters {
+    font-size: 54px;
   }
 
   .portfoliomobile {
@@ -697,9 +762,19 @@ input::placeholder {
 }
 
 @media screen and (max-width: 425px) {
-  .herotext {
+  // .herotext.herosec {
+  //   span {
+  //     letter-spacing: 0.07em;
+  //   }
+  // }
+
+  .bigletters {
+    letter-spacing: 0.07em;
+  }
+
+  .herosec {
     span {
-      letter-spacing: 0.08em;
+      margin-left: 3%;
     }
   }
 

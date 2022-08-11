@@ -96,6 +96,11 @@ a {
   background-repeat: initial;
 }
 
+.aboutmebg {
+  background-image: url("../images/aboutme_bg.jpg");
+  background-repeat: initial;
+}
+
 nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -134,11 +139,11 @@ nav {
   display: grid;
 }
 
-.icons img {
+.icons a {
   cursor: pointer;
 }
 
-.icons img:not(:last-child) {
+.icons a:not(:last-child) {
   margin-bottom: 110px;
 }
 
@@ -469,15 +474,22 @@ input::placeholder {
   background-repeat: initial;
 }
 
-.herotext {
-  margin-left: 260px;
-}
-
-.herotext span {
+.bigletters {
+  font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 112px;
   letter-spacing: 0.13em;
+}
+
+.herosec span {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 14%;
+}
+
+.herotext {
+  margin-left: 260px;
 }
 
 .portfolio {
@@ -511,6 +523,24 @@ input::placeholder {
   margin: 0;
 }
 
+.aboutmesec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutmesec span {
+  margin-left: 14%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.aboutmetext {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 1440px) {
   p,
   h3 {
@@ -535,8 +565,8 @@ input::placeholder {
   .herotext {
     margin-left: 150px;
   }
-  .herotext span {
-    font-size: 84px;
+  .bigletters {
+    font-size: 82px;
   }
 }
 
@@ -647,7 +677,11 @@ input::placeholder {
     margin-right: auto;
     margin-left: auto;
   }
-  .herotext span {
+  .herosec span {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bigletters {
     font-size: 72px;
     line-height: 98px;
   }
@@ -660,6 +694,9 @@ input::placeholder {
   .portfoliomobile .no1 img {
     padding-left: 40px;
     width: 82%;
+  }
+  .aboutmetext {
+    width: 80%;
   }
 }
 
@@ -695,9 +732,11 @@ input::placeholder {
   .contactme h1 {
     font-size: 54px;
   }
-  .herotext span {
+  .herosec span {
+    margin-left: 9%;
+  }
+  .bigletters {
     font-size: 54px;
-    line-height: 70px;
   }
   .portfoliomobile .no1 .textzone {
     padding: 0 30px;
@@ -705,8 +744,11 @@ input::placeholder {
 }
 
 @media screen and (max-width: 425px) {
-  .herotext span {
-    letter-spacing: 0.08em;
+  .bigletters {
+    letter-spacing: 0.07em;
+  }
+  .herosec span {
+    margin-left: 3%;
   }
   .contactme h1 {
     font-size: 47px;
