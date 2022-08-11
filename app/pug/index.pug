@@ -6,8 +6,28 @@ html(lang="en")
         img.circle-up(src="images/icon/circle_up.png", alt="")
         img.circle-side(src="images/icon/circle_side.png", alt="")
         div
-            include includes/nav.pug 
-            .herosec
+            nav.d-flex.container40
+                .logo
+                    h3.m0 SOME LOGO
+                .navmenu
+                    a(href="myportfolio.html") 
+                        h3.scale1 ABOUT <br> ME
+                    a(href="myportfolio.html")
+                        h3.scale1 MY <br> PORTFOLIO
+                    a(href="myportfolio.html")
+                        h3.scale1 CONTACT<br> ME 
+                .navmob.scale1
+                        a(href="#openmenu")
+                            img(src="images/icon/burger_menu.png", alt="")
+                .open-menu#openmenu
+                    a(href="myportfolio.html") 
+                        h3.scale1 ABOUT <br> ME
+                    a(href="myportfolio.html")
+                        h3.scale1 MY <br> PORTFOLIO
+                    a(href="myportfolio.html")
+                        h3.scale1 CONTACT<br> ME 
+            //- include includes/nav.pug 
+            .herosec.container40
                 .icons
                     a(href="https://github.com/niilak") 
                         img.scale1(src="images/icon/git_icon.png", alt="GitHub Acconut")
@@ -19,12 +39,12 @@ html(lang="en")
                     p.big-letter Hi! My name is Nila, and I’m web designer stationed in Montenegro. For long time ago, I wish to start working like designer.
                     p.big-letter Currently I’m in the phase of learning as much as I can in this profession through my own personal projects and courses. 
                     p.big-letter Hope so that i soon stars to work like real freelance UX/UI designer
-            .aboutme.container150
+            .aboutme.container40
                 .yellow-rectangle
                     h1 about <br> me
                     p.big-letter Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley  has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the Aldus PageMaker including versions of Lorem Ipsum
                     button.blue-btn.btn-margin(type='button') read more
-            .myportfolio.container100
+            .myportfolio.container40
                 .d-flex
                     .img
                         img.stonesiped(src="images/stonesiped.png", alt="img")
@@ -34,7 +54,7 @@ html(lang="en")
                         h2 stones
                         p.big-letter  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley  has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.ding versions of Lorem Ipsum
                         button.blue-btn(type='button') see more
-            .myportfoliomobile.container100
+            .myportfoliomobile.container40
                 .yellow-rectangle
                     h1 my <br> portfolio
                     h2 stones
