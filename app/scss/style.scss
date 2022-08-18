@@ -21,6 +21,7 @@ span {
 }
 
 p {
+  // font-size: 2px;
   font-size: 24px;
   line-height: 31px;
   letter-spacing: 0.04em;
@@ -180,9 +181,8 @@ nav {
 }
 
 .myportfolio {
-  display: block;
-  padding-left: 60px;
-  padding-right: 60px;
+  display: flex;
+  justify-content: center;
 
   .d-flex {
     .img {
@@ -407,22 +407,12 @@ input::placeholder {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 14%;
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 96px;
-    // line-height: 112px;
-    // letter-spacing: 0.13em;
   }
 }
 
 .herotext {
   margin-left: 260px;
-  // span {
-  //   font-weight: 700;
-  //   font-size: 96px;
-  //   line-height: 112px;
-  //   letter-spacing: 0.13em;
-  // }
+
 }
 
 .portfolio {
@@ -488,28 +478,13 @@ input::placeholder {
     padding: 80px 30px;
   }
 
-  .myportfolio {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
   .herotext {
     margin-left: 150px;
-
-    // span {
-    //   font-size: 84px;
-    // }
   }
 
   .bigletters {
     font-size: 82px;
   }
-
-  // .herosec {
-  //   // span {
-  //   //   font-size: 84px;
-  //   // }
-  // }
 }
 
 @media screen and (max-width: 1024px) {
@@ -517,16 +492,16 @@ input::placeholder {
     a:not(:last-child) {
       margin-right: 40px;
     }
+    a{
+      h3{
+        font-size: 20px;
+      }
+    }
   }
 
   .aboutme {
     padding-right: 70px;
     padding-left: 70px;
-  }
-
-  .myportfolio {
-    padding-right: unset;
-    padding-left: unset;
   }
 
   .myportfoliomobile {
@@ -651,17 +626,12 @@ input::placeholder {
   .herotext {
     margin-right: auto;
     margin-left: auto;
-    // span {
-    // font-size: 72px;
-    // line-height: 98px;
-    // }
   }
 
   .herosec {
     span {
       margin-left: auto;
       margin-right: auto;
-      // font-size: 80px;
     }
   }
 
@@ -766,11 +736,6 @@ input::placeholder {
 }
 
 @media screen and (max-width: 425px) {
-  // .herotext.herosec {
-  //   span {
-  //     letter-spacing: 0.07em;
-  //   }
-  // }
 
   .bigletters {
     letter-spacing: 0.07em;

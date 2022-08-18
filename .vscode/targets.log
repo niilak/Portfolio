@@ -8,22 +8,20 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Aug 10 18:54:42 2022
+# Make data base, printed on Wed Aug 17 12:59:18 2022
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
 LC_ALL = C
 # environment
-USERPROFILE = C:\Users\Nila
+USERPROFILE = C:\Users\Vladimir
 # environment
-LOCALAPPDATA = C:\Users\Nila\AppData\Local
+LOCALAPPDATA = C:\Users\Vladimir\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\Nila\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\Users\Vladimir\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -37,9 +35,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6952_ICRQCNULDPNCGQUN
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4592_RYFPEQDCVLGFAWGB
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -51,13 +47,13 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Nila\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = C:\Users\Vladimir\AppData\Roaming\Code\CachedData\6d9b74a70ca9c7733b29f0456fd8195364076dda
 # environment
 LANG = C
 # default
 .LOADED := 
 # environment
-TMP = C:\Users\Nila\AppData\Local\Temp
+TMP = C:\Users\Vladimir\AppData\Local\Temp
 # default
 .INCLUDE_DIRS = .
 # environment
@@ -65,11 +61,11 @@ PROCESSOR_ARCHITEW6432 = AMD64
 # makefile
 MAKEFLAGS = pqrR
 # environment
-ONEDRIVE = C:\Users\Nila\OneDrive
+ONEDRIVE = C:\Users\Vladimir\OneDrive
 # makefile
-CURDIR := c:/Users/Nila/Desktop/Portfolio
+CURDIR := c:/Users/Vladimir/OneDrive/Desktop/Portfolio
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -87,7 +83,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6952
+VSCODE_PID = 4592
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -97,7 +93,7 @@ VSCODE_PID = 6952
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-ONEDRIVECONSUMER = C:\Users\Nila\OneDrive
+ONEDRIVECONSUMER = C:\Users\Vladimir\OneDrive
 # default
 MAKE_HOST := Windows32
 # environment
@@ -105,7 +101,7 @@ PROGRAMDATA = C:\ProgramData
 # default
 SHELL := sh.exe
 # environment
-HOMEPATH = \Users\Nila
+HOMEPATH = \Users\Vladimir
 # default
 MAKECMDGOALS := all
 # environment
@@ -119,9 +115,11 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Nila\AppData\Local\Microsoft\WindowsApps;;C:\Users\Nila\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nila\AppData\Roaming\npm
+PATH = C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Users\Vladimir\AppData\Local\Microsoft\WindowsApps;;C:\Users\Vladimir\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Vladimir\AppData\Roaming\npm
 # environment
-COMPUTERNAME = DESKTOP-NN04862
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = DESKTOP-3C35HS7
 # default
 MAKEFILES := 
 # automatic
@@ -129,11 +127,11 @@ MAKEFILES :=
 # environment
 PROMPT = $P$G
 # environment
-CHOCOLATEYLASTPATHUPDATE = 132875079536281306
+CHOCOLATEYLASTPATHUPDATE = 133052039949896356
 # environment
-LOGONSERVER = \\DESKTOP-NN04862
+LOGONSERVER = \\DESKTOP-3C35HS7
 # environment
-USERNAME = Nila
+USERNAME = Vladimir
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # automatic
@@ -147,7 +145,7 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-USERDOMAIN = DESKTOP-NN04862
+USERDOMAIN = DESKTOP-3C35HS7
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -159,13 +157,13 @@ MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-NN04862
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-3C35HS7
 # environment
-NUMBER_OF_PROCESSORS = 4
+NUMBER_OF_PROCESSORS = 8
 # environment
 PUBLIC = C:\Users\Public
 # environment
-APPDATA = C:\Users\Nila\AppData\Roaming
+APPDATA = C:\Users\Vladimir\AppData\Roaming
 # environment
 HOMEDRIVE = C:
 # environment
@@ -177,13 +175,12 @@ COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-TEMP = C:\Users\Nila\AppData\Local\Temp
+TEMP = C:\Users\Vladimir\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\6c00dba2c34341f621dea351996863cd-1.70.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\ec9df81226a5f2bec0412ae570cca6ab-1.70.1-main-sock
 # default
 .RECIPEPREFIX := 
-# autom 
-atic
+# automatic
 <F = $(notdir $<)
 # default
 SUFFIXES := 
@@ -194,11 +191,11 @@ SESSIONNAME = Console
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
-PROCESSOR_REVISION = 4501
+PROCESSOR_REVISION = 8c01
 # environment
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=92/1024=9%, Rehash=0, Collisions=9/119=8%
+# Load=91/1024=9%, Rehash=0, Collisions=8/118=7%
 
 # Pattern-specific Variable Values
 
@@ -206,7 +203,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/Nila/Desktop/Portfolio, mtime 1660118204): 12 files, no impossibilities.
+# . (key c:/Users/Vladimir/OneDrive/Desktop/Portfolio, mtime 1660726845): 12 files, no impossibilities.
 
 # 12 files, no impossibilities in 1 directories.
 
@@ -224,8 +221,7 @@ deploy:
 	npx surge ./build/
 
 pug:
-#  Implicit rule search has n 
-ot been done.
+#  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 2):
@@ -247,7 +243,7 @@ all:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-28 23:25:01
+#  Last modified 2022-08-17 11:00:43
 #  File has been updated.
 #  Successfully updated.
 
@@ -265,6 +261,6 @@ makefile:
 # strcache performance: lookups = 23 / hit rate = 26%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Wed Aug 10 18:54:42 2022
+# Finished Make data base on Wed Aug 17 12:59:18 2022
 
  

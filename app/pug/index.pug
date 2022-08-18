@@ -26,7 +26,6 @@ html(lang="en")
                         h3.scale1 MY <br> PORTFOLIO
                     a(href="#justcontactme")
                         h3.scale1 CONTACT<br> ME  
-            //- include includes/nav.pug 
             .herosec.container40
                 include includes/sideicons.pug
                 .introtext 
@@ -37,7 +36,8 @@ html(lang="en")
                 .yellow-rectangle
                     h1 about <br> me
                     p.big-letter Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley  has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the Aldus PageMaker including versions of Lorem Ipsum
-                    button.blue-btn.btn-margin(type='button') read more
+                    a(href="aboutme.html") 
+                        button.blue-btn.btn-margin(type='button') read more
             .myportfolio.container40
                 .d-flex
                     .img
@@ -47,7 +47,8 @@ html(lang="en")
                         h1 my <br> portfolio
                         h2 stones
                         p.big-letter  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley  has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.ding versions of Lorem Ipsum
-                        button.blue-btn(type='button') see more
+                        a(href="myportfolio.html")
+                            button.blue-btn(type='button') see more
             .myportfoliomobile.container40
                 .yellow-rectangle
                     h1 my <br> portfolio
@@ -56,7 +57,8 @@ html(lang="en")
                     .img
                         img.stonesiped(src="images/stonesiped.png", alt="img")
                         img.stonesmob(src="images/stonesmob.png", alt="img")
-                    button.blue-btn(type='button') see more
+                    a(href="myportfolio.html")
+                        button.blue-btn(type='button') see more
             include includes/contactme.pug
 
 

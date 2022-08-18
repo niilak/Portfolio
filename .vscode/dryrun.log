@@ -1,5 +1,5 @@
 make.exe --dry-run --always-make --keep-going --print-directory
-make: Entering directory 'c:/Users/Nila/Desktop/Portfolio'
+make: Entering directory 'c:/Users/Vladimir/OneDrive/Desktop/Portfolio'
 pug -w ./app/pug/ --pretty -o ./build/
-make: Leaving directory 'c:/Users/Nila/Desktop/Portfolio'
+make: Leaving directory 'c:/Users/Vladimir/OneDrive/Desktop/Portfolio'
  
